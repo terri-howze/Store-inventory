@@ -1,0 +1,18 @@
+#intro {
+    background-image: url(https://www.redmangoanalytics.com/images/generic/telecom_bg.jpg);
+    height: 95vh;
+}
+.getcontainer {
+    margin: auto;
+    width: 50%;
+    
+}
+h1{
+    margin-top: 100px;
+}
+
+#row{
+    margin: auto;
+    width: 50%;
+    visibility: hidden;
+}

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project1-deployment
+spec:
+  selector:
+    matchLabels:
+      app: project1-pod
+  template:
+    metadata:
+      labels:
+        app: project1-pod
+    spec:
+      containers:
+      - name: project1-container
+        image: thowze0905/project1
+        resources:
+          limits:
+            memory: "1G"
+            cpu: "500m"
+        ports:
+        - containerPort: 8085
